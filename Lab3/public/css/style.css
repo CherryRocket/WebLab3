@@ -33,6 +33,10 @@
     src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
 }
 
+p{
+    margin-bottom: 0;
+}
+
 *,*:after,*:before {
     padding: 0;
     margin: 0;
@@ -69,10 +73,6 @@ h1, h2, h3, h4{
     max-width: 1188px;
     height: 836px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .intro_toptext{
@@ -95,15 +95,6 @@ h1, h2, h3, h4{
     color: white;
 }
 
-.content{
-    position: relative;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
 /*Surf*/
 
@@ -157,7 +148,6 @@ h1, h2, h3, h4{
 
 .introblock_information{
     margin: auto auto auto 42px;
-    justify-content: flex-start;
     width: 398px;
     height: 100%;
 }
@@ -359,7 +349,6 @@ h1, h2, h3, h4{
     width: 72px;
     height: 38px;
     background-color: #f2d800;
-    display: flexbox;
 }
 .slide_buts button{
     cursor: pointer;
@@ -382,7 +371,6 @@ h1, h2, h3, h4{
 
 .slide_but2{
     outline: none;
-    margin-left: -4px;
 }
 
 .pages{
@@ -471,19 +459,6 @@ header{
     margin-bottom: 176px;
 }
 .About-us_text{
-    /*width: 1188px;
-    -moz-user-select: none; 
-    -ms-user-select: none; 
-    -o-user-select: none; 
-    -webkit-user-select: none; 
-    text-align: center;
-    text-transform: uppercase;
-    opacity: .03;
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 186px;
-    letter-spacing: 14.6px;
-    color: black;
-    text-transform: uppercase;*/
     width: 1162px;
     height: 143px;
     margin: 0 auto;
@@ -625,19 +600,6 @@ header{
 }
 
 .team_text{
-    /*
-    -moz-user-select: none;
-    -ms-user-select: none; 
-    -o-user-select: none; 
-    -webkit-user-select: none; 
-    text-align: center;
-    text-transform: uppercase;
-    opacity: .03;
-    font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 190px;
-    letter-spacing: 14px;
-    color: black;
-    text-transform: uppercase;*/
     width: 1159px;
     height: 138px;
     margin: 0 auto;
@@ -659,10 +621,6 @@ header{
     box-shadow: 10px 17.3px 50px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .Our-team .team_blocks > div:hover{
@@ -754,12 +712,6 @@ header{
     color: #00b0ff;
 }
 
-.block1_info, .block2_info, .block3_info, .block4_info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .mail{
     font-family: 'Raleway-Regular', sans-serif;
     font-size: 14px;
@@ -779,7 +731,6 @@ header{
 
 .Our-team .team_blocks .location{
     margin-bottom: 45px;
-    display: flex;
 }
 
 .Our-team .team_blocks .location > div{
@@ -842,9 +793,7 @@ header{
     font-family: 'Raleway-Regular', sans-serif;
     font-size: 16px;
     font-weight: normal;
-    font-stretch: normal;
     line-height: 1.5;
-    letter-spacing: normal;
     text-align: left;
     color: #787878;
 }
@@ -920,7 +869,7 @@ footer .Block .Instagram .Block_photo > div{
 }
 
 footer .Block .Instagram .Bar{
-    width: 620px;
+    width: 300px;
     height: 70px;
     background-color: white;
 }
@@ -944,10 +893,6 @@ footer .Block .Instagram .Bar .Mail{
     font-size: 16px;
     font-weight: bold;
     color: black;
-}
-
-footer .Block > .Instagram .Bar .Icon, .Text, .Mail{
-    margin-left: 20px;
 }
 
 footer .Block > .Facebook{
@@ -1030,9 +975,6 @@ footer .Block .Facebook .Block .Container_photo > button{
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #4b4f56;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 footer .Block .Facebook .Block .Container_photo .But1{
@@ -1066,9 +1008,6 @@ footer .Block .Facebook .Block .People{
     height: 85px;
     border: solid 1px #e9ebee;
     background-color: #f6f7f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer .Block .Facebook .Block .People .Block{
@@ -1091,8 +1030,6 @@ footer .Block .Facebook .Block .People .Block .Photos{
     width: 302px;
     height: 32px;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
 }
 
 footer .Block .Facebook .Block .People .Block .Photos > div{
@@ -1233,14 +1170,6 @@ footer .Subscribe > p{
     line-height: 14px;
     font-size: 16px;
     color: white;
-}
-
-footer .Subscribe .Enter{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 footer .Subscribe .Enter .Icon{
