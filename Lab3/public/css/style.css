@@ -33,14 +33,6 @@
     src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
 }
 
-p{
-    display: block;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 *,*:after,*:before {
     padding: 0;
     margin: 0;
@@ -55,6 +47,10 @@ h1, h2, h3, h4{
     margin: 0;
 }
 
+.card {
+    border: none;
+}
+
 /*container*/
 /*1170*/
 
@@ -63,7 +59,7 @@ h1, h2, h3, h4{
 .intro{ 
     padding-top: 189px;
     width: 100%;
-    height: 1114px;
+    margin-bottom: 177px;
     background: url(../images/intro.jpg) top
     no-repeat;  
 }
@@ -82,7 +78,6 @@ h1, h2, h3, h4{
 .intro_toptext{
     font-family: 'PlayfairDisplay-Italic', serif;
     max-width: 760px;
-    text-align: center;
 }
 
 .intro_title{
@@ -102,7 +97,6 @@ h1, h2, h3, h4{
 
 .content{
     position: relative;
-    height: 2420px;
     width: 100%;
     background-color: white;
     display: flex;
@@ -119,8 +113,6 @@ h1, h2, h3, h4{
     width: 1028px;
     box-shadow: 0 0 20px .1px black;
     background: url(../images/IntroBlock_corner.png) no-repeat, white;
-    display: flex;
-    justify-content: start;
 }
 
 .introblock_boards{
@@ -133,9 +125,7 @@ h1, h2, h3, h4{
 
 .introblock_kinds{
     margin-left: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 
 .kind2, .kind3, .kind4{
@@ -167,8 +157,6 @@ h1, h2, h3, h4{
 
 .introblock_information{
     margin: auto auto auto 42px;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
     width: 398px;
     height: 100%;
@@ -189,14 +177,12 @@ h1, h2, h3, h4{
     margin: 3px 0 0 0;
     padding: 0;
     font-size: 0;
-    display: flex;
 }
 
 .rate {
     width: 90px;
     padding: 0;
     font-size: 0;
-    display: flex;
 }
 .rate:hover .star {
     color: #f2d800;
@@ -240,8 +226,7 @@ h1, h2, h3, h4{
 }
 
 .desc_change{
-    margin-top: 15px;
-    display: flex;
+    margin-top: 35px;
 }
 
 .desc1{
@@ -267,8 +252,7 @@ h1, h2, h3, h4{
     margin-top: 5px;
     width: 100%;
     height: 3px;
-    display: flex;
-    align-items: flex-end;
+    
 }
 .active_item{
     width: 98px;
@@ -276,9 +260,9 @@ h1, h2, h3, h4{
     background-color: #00b0ff;
 }
 
-.fade_line{
+.fade_down{
     width: 300px;
-    height: 1px;;
+    height: 1px;
     background-color: #cccccc;
 }
 
@@ -295,30 +279,34 @@ h1, h2, h3, h4{
 .buy{
     margin-top: 33px;
     width: 100%;
-    height: 44px;
-    display: flex;
-    align-items: center;
 }
 
 .buy_text{
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 24px;
+    margin-bottom: 0;
     color: #000000;
-    margin: 0;
 }
 
-#buy_but{
+.buy_but{
+    margin-left: 29px;
+    cursor: pointer;
+    text-transform: uppercase;
     width: 137px;
     height: 44px;
-    margin-left: 29px;
-    font-family: 'Montserrat-Bold', sans-serif;
-    background-color: #00b0ff;
-    font-size: 14px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
     border: none;
     outline: none;
     user-select: none;
+    background-color: #00b0ff;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.buy_but:hover{
+    background-color: #0099ff;
 }
 
 .intro .intro_inner .introblock_information > button{
@@ -347,7 +335,7 @@ h1, h2, h3, h4{
     -ms-user-select: none; /* Internet Explorer (не поддерживается) */
     -o-user-select: none; /* Opera Presto (не поддерживается) */
     -webkit-user-select: none; /* Google Chrome, Opera Next, Safari */
-    left: 638px;
+    left: 620px;
     top: 258px;
     position: absolute;
     text-transform: uppercase;
@@ -368,7 +356,7 @@ h1, h2, h3, h4{
     top: 46px;
     left: auto;
     right: -36px;
-    width: 73px;
+    width: 72px;
     height: 38px;
     background-color: #f2d800;
     display: flexbox;
@@ -426,42 +414,38 @@ header{
     z-index: 1000;
 }
 
-/*nav*/
-#navCont{
-    width: 100%;
-}
-.navbar-brand{
+.header_logo{
     font-family: 'Montserrat-Bold', sans-serif;
-    font-size: 26px;
-    vertical-align: top;
+    font-size: 34px;
+    font-weight: 700;
     color: black;
-    text-decoration: none;
 }
 
-#navbarNav{
-    padding-top: 2px;
+/*nav*/
+.nav{
+    padding-right: 80px;
 }
-
-#navbarNav div > a{
-    margin-top: 5px;
+.nav_link{
+    padding: 6px 8px;
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    vertical-align: top;
+    margin: 1px;
     color: black;
     text-decoration: none;
 }
 
-#navbarNav div:hover{
+.nav_link:hover{
     background-color: #00b0ff;
+    color: white;
+    text-decoration: none;
 }
 
 /*header_icons*/
 .header_icons{
-    display: flex;
-    justify-content: center;
     cursor: pointer;
 }
+
 .header_icons div {
     margin: 5px;
     width: 36px;
@@ -484,6 +468,7 @@ header{
     position: relative;
     width: 100%;
     height: 980px;
+    margin-bottom: 176px;
 }
 .About-us_text{
     /*width: 1188px;
@@ -523,15 +508,12 @@ header{
     background-color: white;
 }
 
-.content .About-us .block{
+.About-us .block{
     position: relative;
     top: 273px;
     height: 564px;
     width: 1170px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .About_us_textblock{
@@ -539,9 +521,6 @@ header{
     margin-left: 94px;
     width: 369px;
     height: 564px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about_toptext{
@@ -570,7 +549,7 @@ header{
     color: #000000;
 }
 
-.content .About-us .block .About_us_textblock > button{
+.About-us .block .About_us_textblock > button{
     align-self: flex-start;
     margin: 22px 0 0 12px;
     width: 90px;
@@ -589,7 +568,7 @@ header{
     cursor: pointer;
 }
 
-.content .About-us .block .About_us_textblock > button:hover{
+.About-us .block .About_us_textblock > button:hover{
     border-bottom: solid 2px #00b0ff;
 }
 
@@ -641,8 +620,8 @@ header{
 /*Our-team*/
 .Our-team{
     position: relative;
-    width: 1188px;
     height: 408px;
+    margin-bottom: 177px;
 }
 
 .team_text{
@@ -670,8 +649,6 @@ header{
     top: 100px;
     width: 100%;
     height: 308px;
-    display: flex;
-    justify-content: center;
 }
 
 .team_block1, .team_block2, .team_block3,
@@ -688,25 +665,25 @@ header{
     justify-content: space-between;
 }
 
-.content .Our-team .team_blocks > div:hover{
+.Our-team .team_blocks > div:hover{
     background-color: #00b0ff;
 }
 
-.content .Our-team .team_blocks > div:hover .name{
+.Our-team .team_blocks > div:hover .name{
     color: white;
 }
 
-.content .Our-team .team_blocks > div:hover .mail,
-.content .Our-team .team_blocks > div:hover .location > p
+.Our-team .team_blocks > div:hover .mail,
+.Our-team .team_blocks > div:hover .location > p
 {
     color: #b3e7ff;
 }
 
-.content .Our-team .team_blocks > div:hover .location > div{
+.Our-team .team_blocks > div:hover .location > div{
     background-image: url(../images/PinSelected.png);
 }
 
-.content .Our-team .team_blocks > div:hover .line{
+.Our-team .team_blocks > div:hover .line{
     background-image: url(../images/LineSelected.png)
 }
 
@@ -760,20 +737,11 @@ header{
     border: solid 2px white;
 }
 
-.block1_picture{
-    background-image: url(../images/Team1.jpg)
-}
-
-.block2_picture{
-    background-image: url(../images/Team2.jpg)
-}
-
-.block3_picture{
-    background-image: url(../images/Team3.jpg)
-}
-
-.block4_picture{
-    background-image: url(../images/Team4.jpg)
+.img-team {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 30px;
 }
 
 .name{
@@ -809,19 +777,19 @@ header{
     background-image: url(../images/Line.png)
 }
 
-.content .Our-team .team_blocks .location{
+.Our-team .team_blocks .location{
     margin-bottom: 45px;
     display: flex;
 }
 
-.content .Our-team .team_blocks .location > div{
+.Our-team .team_blocks .location > div{
     width: 10px;
     height: 13px;
     background-image: url(../images/Pin.png);
     margin-right: 5px;
 }
 
-.content .Our-team .team_blocks .location > p{
+.Our-team .team_blocks .location > p{
     font-family: 'Raleway-Regular', sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -833,29 +801,7 @@ header{
 }
 
 /*Updates*/
-.Updates{
-    position: relative;
-    width: 1188px;
-    height: 516px;
-}
-
-.in{
-    position: relative;
-    width: 1188px;
-    height: 516px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Updates .Topper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Updates .Topper .text{
+.Topper .text{
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -864,27 +810,32 @@ header{
     text-transform: uppercase;
 }
 
-.Updates .Topper .x{
+.Topper .x{
     color: black;
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.Updates .blocks{
-    width: 870px;
+.blocks{
     height: 344px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
-.Updates .blocks > div{
+.blocks > div{
     width: 270px;
     height: 344px;
     background-color: white;
     cursor: pointer;
+    margin-right: 27px;
 }
 
-.Updates .blocks p{
+.blocks .Photo{
+    width: 270px;
+    height: 203px;
+}
+
+.blocks p{
     margin: 13px auto;
     width: 216px;
     height: 88px;
@@ -898,27 +849,32 @@ header{
     color: #787878;
 }
 
-.Updates .blocks > div:hover{
+.blocks > div:hover{
     box-shadow: 0px 2px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-.Updates .blocks > div:hover p{
+.blocks > div:hover p{
     color: #0022ff;
 }
 
-.Updates button{
-    margin-left: 29px;
+.posts_btn{
     width: 197px;
     height: 44px;
     border: none;
     outline: none;
     user-select: none;
     background-color: #00b0ff;
+    cursor: pointer;
     text-transform: uppercase;
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 14px;
     letter-spacing: 1.4px;
     color: white;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #0099ff;
 }
 
 /*footer*/
@@ -956,8 +912,6 @@ footer .Block .Instagram .Block_photo{
     padding-top: 56px;
     width: 620px;
     height: 676px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 footer .Block .Instagram .Block_photo > div{
@@ -965,28 +919,10 @@ footer .Block .Instagram .Block_photo > div{
     height: 310px;
 }
 
-footer .Block .Instagram .Block_photo .Photo1{
-    background: url(../images/InstPhoto1.jpg) no-repeat white;
-}
-
-footer .Block .Instagram .Block_photo .Photo2{
-    background: url(../images/InstPhoto2.jpg) no-repeat white;
-}
-
-footer .Block .Instagram .Block_photo .Photo3{
-    background: url(../images/InstPhoto3.jpg) no-repeat white;
-}
-
-footer .Block .Instagram .Block_photo .Photo4{
-    background: url(../images/InstPhoto4.jpg) no-repeat white;
-}
-
 footer .Block .Instagram .Bar{
     width: 620px;
     height: 70px;
     background-color: white;
-    display: flex;
-    align-items: center;
 }
 
 footer .Block .Instagram .Bar > .Icon{
@@ -1046,9 +982,6 @@ footer .Block .Facebook .Block .Container_photo .Srfrs_photo{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.38);
     border: solid 2px white;
     background-color: #00b0ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 footer .Block .Facebook .Block .Container_photo .Srfrs_photo > p{
@@ -1143,9 +1076,7 @@ footer .Block .Facebook .Block .People .Block{
     height: 67px;
     box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.13);
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    
 }
 
 footer .Block .Facebook .Block .People .Block > p{
@@ -1211,17 +1142,11 @@ footer .Block .Links{
     right: 200px;
     width: 318px;
     height: 124px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer .Block .Links > div{
     width: 150px;
     height: 124px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 footer .Block .Links div{
@@ -1280,10 +1205,6 @@ footer .Info{
     bottom: 154px;
     width: 248px;
     height: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
 }
 
 footer .Info > p{
@@ -1305,9 +1226,6 @@ footer .Subscribe{
     right: 218px;
     width: 300px;
     height: 57px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 footer .Subscribe > p{

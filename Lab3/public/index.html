@@ -3,212 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/bootstrap.min.js" type="application/javascript"></script>
-    <script src="js/bootstrap.bundle.min.js" type="application/javascript"></script>
-    <title>Lab3</title>
+    <title>Lab2</title>
 </head>
 <body>
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <div class="d-flex justify-content-between" id = "navCont">
-        <a class="navbar-brand">Surfers Co.</a>
-        <div class="d-flex justify-content-center" id="navbarNav">
-            <div class="nav-item active">
-                <a class="nav-link" href="#">BOARDS<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item active">
-                <a class="nav-link" href="#">ACCESSORIES<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item active">
-                <a class="nav-link" href="#">BLOG<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item active">
-                <a class="nav-link" href="#">TECHNOLOGY<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item active">
-                <a class="nav-link" href="#">TEAM<span class="sr-only">(current)</span></a>
-            </div>
-            <div class="nav-item active">
-                <a class="nav-link" href="#">DEALERS<span class="sr-only">(current)</span></a>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="header_inner">
+                <div class="header_logo">
+                    Surfers Co.
+                </div>
             </div>
         </div>
-        <div class="header_icons">
-            <div id="icon_facebook" href="#"></div>
-            <div id="icon_instagram" href="#"></div>
-            <div id="icon_mail" href="#"></div>
+        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+            <nav class="nav">
+                <a class="nav_link" href="#">BOARDS</a>
+                <a class="nav_link" href="#">ACCESSORIES</a>
+                <a class="nav_link" href="#">BLOG</a>
+                <a class="nav_link" href="#">TECHNOLOGY</a>
+                <a class="nav_link" href="#">TEAM</a>
+                <a class="nav_link" href="#">DEALERS</a>
+            </nav>
         </div>
+        <div class="col-lg-2">
+            <div class="header_icons d-flex">
+                <div id="icon_facebook" href="#"></div>
+                <div id="icon_instagram" href="#"></div>
+                <div id="icon_mail" href="#"></div>
+            </div>
+        </div> 
     </div>
-</nav>
 </header>
-<div class="intro">
-    <div class="intro_inner">
-        <div class="intro_toptext">
-            <h1 class="intro_title">Ride every wave as if it's your last</h1>
-            <h2 class="subtitle">We love the motion of the ocean</h2>
-        </div>
-        <div class="intro_block">
-            <div class="introblock_boards"></div>
-            <div class="introblock_kinds">
-                <div class="kind1"></div>
-                <div class="kind2"></div>
-                <div class="kind3"></div>
-                <div class="kind4"></div>
-            </div>
-            <div class="introblock_information">
-                <div class="nameboard">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</div>
-                <div class="rating">
-                    <ul class="rate">
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                        </ul>
-                    <p class="rating_amount">(52)</p>
-                </div>
-                <div class="desc_change">
-                    <div class="desc1">Description</div>
-                    <div class="desc">Features</div>
-                    <div class="desc">Dimensions</div>
-                </div>
-                <div class="items_line">
-                    <div class="active_item"></div>
-                    <div class="fade_line"></div>
-                </div>
-                <div class="desc_text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</div>
-                <div class="buy">
-                    <p class="buy_text">$499.99</p>
-                    <button class="btn btn-primary" id="buy_but" type="submit">Buy now</button>
-                </div>
-                <button>View all boards</button>
-            </div>
-            <p class="introblock_text">Boards</p>
-            <div class="slide_buts">
-                <button class="slide_but1">🡨</button>
-                <button class="slide_but2">🡪</button>
-            </div>
-            <div class="pages">05/25</div>
-        </div>   
-    </div> 
-</div>
 
-<div class="content">
-    <div class="About-us">
-        <div class="About-us_text"></div>
-        <div class="About-us_backblock"></div>
-        <div class="About_us_whiteblock"></div>
-        <div class="block">
-            <div class="About_us_textblock">
-                <b class="about_toptext">We are Surfers co.</b>
-                <b class="about_x">×</b>
-                <p class="about_text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
-                <button>Read more</button>
-            </div>
-            <div class="about_video">
-                <button class="video_but">►</button>
-                <div class="about_circle"></div>
+<section>
+    <div class="row">
+        <div class="col-lg-12 justify-content-center">
+            <div class="intro">
+                <div class="intro_inner">
+                    <div class="intro_toptext text-center">
+                        <h1 class="intro_title">Ride every wave as if it's your last</h1>
+                        <h2 class="subtitle">We love the motion of the ocean</h2>
+                    </div>
+                    <div class="intro_block d-flex">
+                        <div class="introblock_boards"></div>
+                        <div class="introblock_kinds d-flex flex-column justify-content-center">
+                            <div class="kind1"></div>
+                            <div class="kind2"></div>
+                            <div class="kind3"></div>
+                            <div class="kind4"></div>
+                        </div>
+                        <div class="introblock_information d-flex flex-column">
+                            <div class="nameboard">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</div>
+                            <div class="rating d-flex">
+                                <ul class="rate d-flex">
+                                        <li class="star"></li>
+                                        <li class="star"></li>
+                                        <li class="star"></li>
+                                        <li class="star"></li>
+                                        <li class="star"></li>
+                                    </ul>
+                                <p class="rating_amount">(52)</p>
+                            </div>
+                            <div class="desc_change d-flex">
+                                <div class="desc1">Description</div>
+                                <div class="desc">Features</div>
+                                <div class="desc">Dimensions</div>
+                            </div>
+                            <div class="items_line d-flex">
+                                <div class="active_item"></div>
+                                <div class="fade_down"></div>
+                            </div>
+                            <div class="desc_text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</div>
+                            <div class="buy d-flex align-items-center">
+                                <p class="buy_text">$499.99</p>
+                                <button class="buy_but">Buy now</button>
+                            </div>
+                            <button>View all boards</button>
+                        </div>
+                        <p class="introblock_text">Boards</p>
+                        <div class="slide_buts">
+                            <button class="slide_but1">🡨</button>
+                            <button class="slide_but2">🡪</button>
+                        </div>
+                        <div class="pages">05/25</div>
+                    </div>   
+                </div> 
             </div>
         </div>
     </div>
-    <div class="Our-team">
-        <div class="team_text"></div>
-        <div class="team_blocks">
-            <button class="button_left">🡨</button>
-            <div class="team_block1">
-                <div class="block1_picture"></div>
-                <div class="block1_info">
-                    <p class="name">Taj Burrow</p>
-                    <p class="mail">@tajamos</p>
-                </div>
-                <div class="line"></div>
-                <div class="location">
-                    <div ></div>
-                    <p>Yallingup, Australia</p>
-                </div>
-            </div>
-            <div class="team_block3">
-                <div class="block3_picture"></div>
-                <div class="block3_info">
-                    <p class="name">Ian Walsh</p>
-                    <p class="mail">@ian.walsh</p>
-                </div>
-                <div class="line"></div>
-                <div class="location">
-                    <div ></div>
-                    <p>Maui, Hi</p>
+</section>
+ 
+<section>
+    <div class="row">
+        <div class="col-lg-12">  
+            <div class="About-us">
+                <div class="About-us_text"></div>
+                <div class="About-us_backblock"></div>
+                <div class="About_us_whiteblock"></div>
+                <div class="block d-flex justify-content-between">
+                    <div class="About_us_textblock d-flex flex-column align-items-center">
+                        <b class="about_toptext">We are Surfers co.</b>
+                        <b class="about_x">×</b>
+                        <p class="about_text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</p>
+                        <button>Read more</button>
+                    </div>
+                    <div class="about_video">
+                        <button class="video_but">►</button>
+                        <div class="about_circle"></div>
+                    </div>
                 </div>
             </div>
-            <div class="team_block2">
-                <div class="block2_picture"></div>
-                <div class="block2_info">
-                    <p class="name">Malia Manuel</p>
-                    <p class="mail">@maliamanuel</p>
-                </div>
-                <div class="line"></div>
-                <div class="location">
-                    <div ></div>
-                    <p>Wailua, Hi</p>
-                </div>
-            </div>
-            <div class="team_block4">
-                <div class="block4_picture"></div>
-                <div class="block4_info">
-                    <p class="name">Macy Callaghan</p>
-                    <p class="mail">@macyjanecallaghan</p>
-                </div>
-                <div class="line"></div>
-                <div class="location">
-                    <div ></div>
-                    <p>San Clemente, CA</p>
-                </div>
-            </div>
-            <button class="button_right">🡪</button>
         </div>
     </div>
-    <div class="Updates">
-        <div class="in">
-            <div class="Topper">
-                    <b class="text">Latest Updates</b>
-                    <b class="x">×</b>
+</section>
+<section>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="Our-team">
+                <div class="team_text"></div>
+                <div class="team_blocks d-flex justify-content-center">
+                    <button class="button_left">🡨</button>
+                    <div class="card team_block1">
+                        <img class="card-img-top img-team" src="images/Team1.jpg">
+                        <div class="card-text block1_info">
+                            <p class="name">Taj Burrow</p>
+                            <p class="mail">@tajamos</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="location">
+                            <div ></div>
+                            <p>Yallingup, Australia</p>
+                        </div>
+                    </div>
+                    <div class="card team_block3">
+                        <img class="card-img-top img-team" src="images/Team3.jpg">
+                        <div class="card-text block3_info">
+                            <p class="name">Ian Walsh</p>
+                            <p class="mail">@ian.walsh</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="location">
+                            <div ></div>
+                            <p>Maui, Hi</p>
+                        </div>
+                    </div>
+                    <div class="card team_block2">
+                        <img class="card-img-top img-team" src="images/Team2.jpg">
+                        <div class="card-text block2_info">
+                            <p class="name">Malia Manuel</p>
+                            <p class="mail">@maliamanuel</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="location">
+                            <div ></div>
+                            <p>Wailua, Hi</p>
+                        </div>
+                    </div>
+                    <div class="card team_block4">
+                        <img class="card-img-top img-team" src="images/Team4.jpg">
+                        <div class="card-text block4_info">
+                            <p class="name">Macy Callaghan</p>
+                            <p class="mail">@macyjanecallaghan</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="location">
+                            <div ></div>
+                            <p>San Clemente, CA</p>
+                        </div>
+                    </div>
+                    <button class="button_right">🡪</button>
                 </div>
-                <div class="blocks">
-                    <div class="block2">
-                        <img src="images/Update1.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <p class="card-text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</p>
-                        </div>
-                    </div>
-                    <div class="block2">
-                        <img src="images/Update2.jpg" class="card-img-top">
-                        <div class="card-body">
-                        <p>A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</p>
-                        </div>
-                    </div>
-                    <div class="block3">
-                        <img src="images/Update3.jpg" class="card-img-top">
-                        <div class="card-body">
-                        <p>Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</p>
-                        </div>
-                    </div>
-                </div>
-            <button class="btn btn-primary" type="submit">View all posts</button>
+            </div>
         </div>
     </div>
-</div>
+</section>
+<section>
+     <div class="row">
+        <div class="col-lg-12">
+            <div class="Topper d-flex flex-column text-center">
+                <b class="text">Latest Updates</b>
+                <b class="x">×</b>
+             </div>
+        </div>
+    </div>               
+     <div class="row">
+        <div class="col-lg-10 offset-1">
+            <div class="blocks d-flex justify-content-center">
+                <div class="card block1">
+                    <img class="card-img-top" src="images/Update1.jpg">
+                    <p class="card-text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</p>
+                </div>
+                <div class="card block2">
+                <img class="card-img-top" src="images/Update2.jpg">
+                    <p class="card-text">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</p>
+                </div>
+                <div class="card block3">
+                    <img class="card-img-top" src="images/Update3.jpg">
+                    <p class="card-text">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <button class="posts_btn">View all posts</button>
+        </div>
+    </div>
+</section>
 <footer>
     <div class="back"></div>
-    <div class="Block">
+    <div class="Block d-flex">
         <div class="Instagram">
-            <div class="Block_photo">
-                <div class="Photo1"></div>
-                <div class="Photo2"></div>
-                <div class="Photo3"></div>
-                <div class="Photo4"></div>        
+            <div class="Block_photo d-flex flex-wrap">
+                <div class="card">
+                	<img class="card-img-top" src="images/InstPhoto1.jpg">
+                </div>
+                <div class="card">
+                	<img class="card-img-top" src="images/InstPhoto2.jpg">
+                </div>
+                <div class="card">
+                	<img class="card-img-top" src="images/InstPhoto3.jpg">
+                </div>
+                <div class="card">
+                	<img class="card-img-top" src="images/InstPhoto4.jpg">
+                </div>
             </div>
-            <div class="Bar">
+            <div class="Bar  d-flex">
                 <div class="Icon"></div>
                 <p class="Text">Follow us</p>
                 <p class="Mail">@surfersco</p>
@@ -217,7 +238,7 @@
         <div class="Facebook">
             <div class="Block">
                 <div class="Container_photo">
-                    <div class="Srfrs_photo">
+                    <div class="Srfrs_photo d-flex justify-content-center align-items-center">
                         <p>Srfrs co</p>
                     </div>
                     <p class="Srfrs">Surfers Co.</p>
@@ -232,7 +253,7 @@
                     </button>
                 </div>
                 <div class="People">
-                    <div class="Block">
+                    <div class="Block d-flex flex-column">
                         <p>You and 8 friends like this</p>
                         <div class="Photos">
                             <div class="Photo1"></div>
@@ -249,8 +270,8 @@
                 </div>
             </div>
         </div>
-        <div class="Links">
-            <div class="Block1">
+        <div class="Links d-flex justify-content-between align-items-center">
+            <div class="Block1 d-flex flex-column space-around">
                 <div class="Link1">
                     <div class="Line"></div>
                     <p>About</p>
@@ -268,7 +289,7 @@
                     <p>Blog</p>
                 </div>
             </div>
-            <div class="Block2">
+            <div class="Block2 d-flex flex-column space-around">
                 <div class="Link1">
                     <div class="Line"></div>
                     <p>Technology</p>
@@ -287,7 +308,7 @@
                 </div>
             </div>
         </div>
-        <div class="Info">
+        <div class="Info d-flex justify-content-between align-items-center">
             <p>© 2017 Surfers Co.</p>
             <div></div>
             <p>Design by @lucaalco</p>
@@ -296,7 +317,7 @@
             <p>Subscribe to our newsletter</p>
             <div class="Enter">
                 <div class="Icon"></div>
-                <input></input>
+                <input placeholder="Your email"></input>
                 <button>🡪</button>
                 <div class="UnderLine"></div>
             </div>
